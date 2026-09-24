@@ -1,0 +1,354 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Koushal | Trading & Learning</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #050b18;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #071326;
+      padding: 18px 8%;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid #17345f;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+      color: #38bdf8;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 22px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+      background:
+        radial-gradient(circle at top, #102d55, #050b18 65%);
+    }
+
+    .hero h1 {
+      font-size: 55px;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 span {
+      color: #38bdf8;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      color: #b8c7dc;
+      font-size: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 25px;
+      background: #38bdf8;
+      color: #04111f;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 70px 8%;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 35px;
+      margin-bottom: 40px;
+      color: #38bdf8;
+    }
+
+    .about {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+      color: #c6d2e3;
+      font-size: 17px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #0a172b;
+      padding: 25px;
+      border-radius: 12px;
+      border: 1px solid #17345f;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-7px);
+      border-color: #38bdf8;
+    }
+
+    .card h3 {
+      color: #38bdf8;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #b7c5d8;
+    }
+
+    .journey {
+      background: #071326;
+    }
+
+    .warning {
+      margin-top: 30px;
+      padding: 20px;
+      border-left: 4px solid #38bdf8;
+      background: #0b1b32;
+      color: #c7d5e8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #030812;
+      color: #7f91aa;
+    }
+
+    @media(max-width: 700px) {
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      nav a {
+        margin: 5px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div class="logo">KOUSHAL</div>
+
+    <div>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#trading">Trading</a>
+      <a href="#knowledge">Knowledge</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div>
+    <h1>Hi, I'm <span>Koushal</span></h1>
+
+    <p>
+      Welcome to my personal website.
+      I am learning trading and building my knowledge
+      step by step in the financial markets.
+    </p>
+
+    <a class="btn" href="#trading">Explore My Trading Journey</a>
+  </div>
+</section>
+
+<section id="about">
+  <h2 class="title">About Me</h2>
+
+  <div class="about">
+    <p>
+      My name is Koushal. I am interested in technology,
+      learning new skills and especially trading.
+      I am currently building my understanding of charts,
+      market structure, price action and trading psychology.
+    </p>
+
+    <br>
+
+    <p>
+      My goal is to keep learning, maintain discipline
+      and understand the market instead of blindly following
+      random tips or signals.
+    </p>
+  </div>
+</section>
+
+<section class="journey" id="trading">
+  <h2 class="title">My Trading Journey</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>📊 Chart Reading</h3>
+      <p>
+        Learning candlesticks, support and resistance,
+        chart patterns and price action.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>💧 Liquidity</h3>
+      <p>
+        Understanding liquidity areas, Buy Side Liquidity
+        and Sell Side Liquidity.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>📈 Market Structure</h3>
+      <p>
+        Learning concepts such as BOS, CHoCH,
+        Higher Highs, Higher Lows, Lower Highs
+        and Lower Lows.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>🎯 Risk Management</h3>
+      <p>
+        Understanding Stop Loss, Take Profit,
+        Risk-to-Reward and position sizing.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section id="knowledge">
+  <h2 class="title">Trading Knowledge</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Candlestick</h3>
+      <p>
+        Candlesticks show Open, High, Low and Close
+        prices and help traders study price movement.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Support & Resistance</h3>
+      <p>
+        Support and resistance are important price areas
+        where market reactions can occur.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>FVG</h3>
+      <p>
+        Fair Value Gap is a price imbalance that traders
+        may study as part of their market analysis.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>OB</h3>
+      <p>
+        Order Block is a price area studied by some
+        traders when analyzing institutional-style
+        price movement.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>RSI</h3>
+      <p>
+        RSI is a momentum indicator commonly used
+        to study the strength of price movement.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>EMA / SMA</h3>
+      <p>
+        Moving averages can help traders analyze
+        trends and price direction.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>VWAP</h3>
+      <p>
+        VWAP represents the volume-weighted average price
+        and is commonly used for intraday analysis.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Trading Psychology</h3>
+      <p>
+        Discipline, patience and emotional control are
+        important parts of learning trading.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="warning">
+    <strong>⚠️ Important:</strong>
+    This website is for educational purposes only.
+    Trading and investing involve financial risk.
+    Always learn and research before making financial decisions.
+  </div>
+</section>
+
+<footer>
+  © 2026 Koushal | Personal Trading Learning Website
+</footer>
+
+</body>
+</html>
